@@ -1,0 +1,24 @@
+Registration_test
+Test url : www.abconline.com
+First Name : Purvi
+Last Name : Sharma
+Email : purvi@bmail.com
+Password : Purvi31
+Confirm password : Purvi31
+
+
+
+Feature: abc_registration_078
+Scenario: user should able to register successfully by filling all compulsory fields
+Given user is on home page
+When user click on register button
+And enter First name “Purvi”
+And enter Last name “Sharma”
+And enter Email purvi@bmail.com
+And enter Password “Purvi31”
+And confirm Password “Purvi31”
+And click on Register button
+Then user should be registered successfully
+And should see message “Your registration completed”
+
+
